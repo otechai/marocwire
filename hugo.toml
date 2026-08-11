@@ -61,7 +61,7 @@ pagination.pagerSize = 10
     hiddenInSingle = false
 
   [params.editPost]
-    URL = "https://github.com/marocwire/marocwire.github.io/tree/main/content"
+    URL = "https://github.com/marocwire/otechai.github.io/tree/main/content"
     Text = "Suggest a correction"
     appendFilePath = true
 
