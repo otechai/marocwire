@@ -1,7 +1,7 @@
-baseURL = "https://otechai.github.io/marocwire"
+baseURL = "https://otechai.github.io/marocwire/"
 locale = "en-us"
 title = "MarocWire"
-theme = "PaperMod"
+theme = "mainroad"
 enableRobotsTXT = true
 enableEmoji = true
 
@@ -11,106 +11,61 @@ pagination.pagerSize = 10
   disableXML = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  # PaperMod's "JSON" output was for its Fuse.js search index (layouts/index.json.json).
+  # Mainroad has no equivalent template — leaving JSON here breaks the build.
+  home = ["HTML", "RSS"]
+
+[Author]
+  name = "Otmane Echaibi"
+  bio = "MarocWire reads Morocco's Bulletin Officiel so you don't have to — translated, filtered, and written in plain English for Moroccan expats and the international public."
+  avatar = "img/marocwire-logo.png"
 
 [params]
-  env = "production"
-  title = "MarocWire"
   description = "Morocco's official gazette, translated into news for Moroccan expats and the international public — investment, infrastructure, water, and MRE policy, sourced straight from government paperwork."
-  keywords = ["Morocco", "Bulletin Officiel", "MRE", "Moroccan expats", "Morocco news", "Morocco investment", "OCP", "Morocco water", "Morocco business"]
-  author = "Otmane Echaibi"
-  images = ["img/marocwire-cover.jpg"]
-  DateFormat = "January 2, 2006"
-  defaultTheme = "auto"
-  disableThemeToggle = false
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = false
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
-  ShowFullTextinRSS = true
-  UseHugoToc = true
-  disableSpecial1stPost = false
-  hidemeta = false
-  comments = false
-  mainSections = ["posts"]
+  opengraph = true
+  twitter_cards = true
+  readmore = true       # show "Read more" button on list pages instead of full post bleed
+  authorbox = false      # this is a publication, not a personal blog — skip the per-post bio box
+  pager = true
+  post_meta = ["date", "categories"]
+  mainSections = ["posts"]   # was ["post", "docs"] in the example — your content lives in content/posts
+  googleAnalytics = ""       # optional: paste tracking ID if/when you add GA
 
-  [params.homeInfoParams]
-    Title = "MarocWire 🇲🇦"
-    Content = "Morocco's Official Gazette, translated into plain English for Moroccan expats and the international public. New investment rules, mega-projects, water policy, and everything affecting Moroccans abroad — sourced directly from government filings, before it hits the mainstream press."
-
-  [params.profileMode]
-    enabled = true
+  [params.logo]
+    image = "img/marocwire-logo.png"
     title = "MarocWire"
     subtitle = "News from Morocco's Official Gazette — for the diaspora and the world"
-    imageUrl = "img/marocwire-logo.png"
-    imageWidth = 150
-    imageHeight = 150
-    imageTitle = "MarocWire"
-    buttons = [
-      { name = "Digests", url = "posts" },
-      { name = "About", url = "about" },
-      { name = "Categories", url = "categories" }
-    ]
 
-  [params.cover]
-    hidden = false
-    hiddenInList = false
-    hiddenInSingle = false
+  [params.thumbnail]
+    visibility = ["list", "post"]   # show post cover images in both list and single views
 
-  [params.editPost]
-    URL = "https://github.com/marocwire/otechai.github.io/tree/main/content"
-    Text = "Suggest a correction"
-    appendFilePath = true
+  [params.sidebar]
+    home = "right"
+    list = "right"
+    single = "right"
+    # "search" widget needs external wiring (see note above) — omitted until that's set up
+    widgets = ["recent", "categories", "taglist", "social"]
 
-  [params.fuseOpts]
-    isCaseSensitive = false
-    shouldSort = true
-    location = 0
-    distance = 1000
-    threshold = 0.4
-    minMatchCharLength = 0
+  [params.widgets]
+    recent_num = 5
+    categories_counter = true   # show post count per category — useful for a mre-watch/mega-projects/etc. archive
+    tags_counter = false
 
-  [params.assets]
-    favicon = "favicon.ico"
-    favicon16x16 = "favicon.ico"
-    favicon32x32 = "favicon.ico"
-    apple_touch_icon = "apple-touch-icon.png"
-    disableFingerprinting = false
-
-  [params.analytics.google]
-    SiteVerificationTag = ""   # Google Search Console verification string
+    [params.widgets.social]
+      github = "otechai"
+      # Built-in social widget only supports named networks (facebook, twitter, instagram,
+      # linkedin, telegram, github, gitlab, bitbucket) — email and RSS need the "custom" list below
+      [[params.widgets.social.custom]]
+        title = "Email"
+        url = "mailto:otmanova@proton.me"
+      [[params.widgets.social.custom]]
+        title = "RSS"
+        url = "index.xml"
 
 [sitemap]
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
-
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/otechai"
-
-[[params.socialIcons]]
-  name = "email"
-  url = "mailto:otmanova@proton.me"
-
-[[params.socialIcons]]
-  name = "rss"
-  url = "index.xml"
-
-[[params.socialIcons]]
-  name = "buymeacoffee"
-  url = "https://www.buymeacoffee.com/otechai"
-
-# [[params.socialIcons]]
-#   name = "x"
-#   url = "https://x.com/marocwire"
-#
-# [[params.socialIcons]]
-#   name = "telegram"
-#   url = "https://t.me/marocwire"
 
 [menu]
   [[menu.main]]
@@ -128,11 +83,7 @@ pagination.pagerSize = 10
     name = "About"
     url = "/about/"
     weight = 30
-  [[menu.main]]
-    identifier = "search"
-    name = "Search"
-    url = "/search/"
-    weight = 40
+  # "search" menu item removed — no /search/ page yet, see note above
 
 [taxonomies]
   tag = "tags"
