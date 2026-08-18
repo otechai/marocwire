@@ -10,13 +10,10 @@
 		{{ . }}
 	</div>
 	{{- end }}
-  {{- $paginator := .Paginate .Pages.ByTitle }}
+  {{- $paginator := .Paginate (sort .Pages "Slug" "desc") }}
   {{- range $paginator.Pages }}
-	  {{- .Render "summary" }}
+	 {{- .Render "summary" }}
   {{- end }}
-	<!-- {{- range .Paginator.Pages }} -->
-	<!-- 	{{- .Render "summary" }} -->
-	<!-- {{- end }} -->
 </main>
 {{ partial "pagination.html" . }}
 {{ end }}

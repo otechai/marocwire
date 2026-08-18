@@ -5,8 +5,8 @@
 		{{ . }}
 	</div>
 	{{- end }}
-	<!-- {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }} -->
-  {{ $paginator := .Paginate ((where .Site.RegularPages "Type" "in" .Site.Params.mainSections).ByTitle) }}
+	{{ $pages := sort (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) "Slug" "desc" }}
+	{{ $paginator := .Paginate $pages }}
 	{{- range $paginator.Pages }}
 		{{- .Render "summary" }}
 	{{- end }}

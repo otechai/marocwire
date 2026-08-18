@@ -4,7 +4,7 @@ date = 2026-08-13T09:00:00+01:00
 draft = false
 slug = "7532-morocco-drug-pricing-overhaul-ocp-phosphate-rail-land"
 tags = ["Morocco", "Bulletin Officiel", "Healthcare", "Pharmaceuticals", "OCP", "High-Speed Rail", "Infrastructure", "Water", "Land Rights", "Youth", "World Cup 2030", "Economy"]
-categories = ["News Digest", "Morocco"]
+categories = ["Arabic Edition"]
 description = "A digest of Morocco's Official Gazette #7532 (Aug 6, 2026): a full overhaul of how medicine prices are set, land seized for the Kenitra–Marrakech high-speed rail line and OCP's new phosphate corridor in Safi, drinking-water pipelines for drought-hit Taounate, a new youth benefits pass, and nearly 2,400 hectares of tribal land formally mapped."
 summary = "Morocco rewrites its drug-pricing formula, clears land for high-speed rail and OCP's phosphate corridor, pipes water to Taounate, launches a Youth Pass, and formalizes tribal land boundaries — all from this week's Official Gazette."
 +++
