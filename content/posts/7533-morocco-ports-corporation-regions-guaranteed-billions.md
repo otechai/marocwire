@@ -2,7 +2,7 @@
 title = "Morocco Turns Its Port Authority Into a Company — and Locks In $1.2B a Year for Regions"
 date = 2026-08-17T09:00:00+01:00
 draft = false
-slug = "morocco-ports-corporation-regions-billions-bulletin-7533"
+slug = "7533-morocco-ports-corporation-regions-billions-bulletin"
 tags = ["Morocco", "Bulletin Officiel", "Ports", "Infrastructure", "Regionalization", "Banking", "Real Estate", "MRE", "World Cup 2030", "Economy"]
 categories = ["News Digest", "Morocco"]
 description = "A digest of Morocco's Official Gazette #7533 (Aug 10, 2026): the national ports agency becomes a corporation, regions get a guaranteed annual budget floor, a new bank-failure rescue system, sweeping real-estate reform, and 2024 tax revenue that beat forecasts by billions."
