@@ -17,11 +17,11 @@ pagination.pagerSize = 10
 
 [Author]
   name = "Otmane Echaibi"
-  bio = "MarocWire reads Morocco's Bulletin Officiel so you don't have to — translated, filtered, and written in plain English for Moroccan expats and the international public."
+  bio = "MarocWire reads Morocco's Bulletin Officiel so you don't have to — translated, filtered, and written in plain English for Moroccan expats, everyday Moroccans, and the international public."
   avatar = "img/marocwire-logo.png"
 
 [params]
-  description = "Morocco's official gazette, translated into news for Moroccan expats and the international public — investment, infrastructure, water, and MRE policy, sourced straight from government paperwork."
+  description = "Morocco's official gazette, translated into news for Moroccan expats, everyday Moroccans, and the international public — investment, infrastructure, rights, accountability, and MRE policy, sourced straight from government paperwork."
   opengraph = true
   twitter_cards = true
   readmore = true       # show "Read more" button on list pages instead of full post bleed
@@ -34,7 +34,7 @@ pagination.pagerSize = 10
   [params.logo]
     image = "img/marocwire-logo.png"
     title = "MarocWire"
-    subtitle = "News from Morocco's Official Gazette — for the diaspora and the world"
+    subtitle = "News from Morocco's Official Gazette — for the diaspora, everyday Moroccans, and the world"
 
   [params.thumbnail]
     visibility = ["list", "post"]   # show post cover images in both list and single views

@@ -2,7 +2,7 @@
 title = "About"
 layout = "single"
 url = "/about/"
-summary = "About MarocWire — Morocco's Official Gazette, translated into news for expats and the world."
+summary = "About MarocWire — Morocco's Official Gazette, translated into news for expats, everyday Moroccans, and the world."
 hidemeta = true
 ShowReadingTime = false
 ShowShareButtons = false
@@ -15,14 +15,16 @@ Morocco publishes a weekly **Bulletin Officiel** — the government's official g
 
 But buried in that paperwork is real news: new infrastructure projects, investment rules, water and agriculture policy, banking licenses, and — often — the first public confirmation of things the mainstream press reports weeks later.
 
-**MarocWire reads it so you don't have to.** Each issue is translated, filtered down to what actually matters, and written in plain English for two audiences:
+**MarocWire reads it so you don't have to.** Each issue is translated, filtered down to what actually matters, and written in plain English for three audiences:
 
 - **Moroccan expats (MRE)** — investment incentives, property rules, banking/remittance changes, anything affecting Moroccans living abroad
+- **Everyday Moroccans** — rights, free speech, healthcare and education access, labor protections, corruption and accountability, local governance — the paperwork that quietly shapes daily life
 - **The international public** — Morocco's mega-projects, water and climate policy, and the business/investment climate
 
 ### What you'll find here
 - **Digests** — one post per Bulletin Officiel issue, translated and prioritized
 - **MRE Watch** — anything specifically relevant to Moroccans abroad
+- **Accountability Watch** — rights, corruption, governance, and policy that affects daily life inside Morocco
 - **Mega-projects** — OCP, energy, rail, ports, water infrastructure
 - **Sourcing** — every story links back to the original decree/law for credibility
 
