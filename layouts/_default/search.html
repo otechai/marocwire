@@ -1,0 +1,40 @@
+{{ define "main" }}
+<main class="main list" role="main">
+  <header class="main__header">
+    <h1 class="main__title">{{ .Title }}</h1>
+  </header>
+  <div class="content main__content">
+    <input type="text" id="search-input" placeholder="Search posts…"
+           style="width:100%;padding:10px;font-size:1rem;margin-bottom:20px;" />
+    <ul id="search-results"></ul>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+<script>
+  let fuse;
+  fetch("{{ "index.json" | relURL }}")
+    .then(res => res.json())
+    .then(data => {
+      fuse = new Fuse(data, {
+        keys: ["title", "summary"],
+        threshold: 0.35,
+      });
+    });
+
+  const input = document.getElementById("search-input");
+  const results = document.getElementById("search-results");
+
+  input.addEventListener("input", () => {
+    results.innerHTML = "";
+    if (!fuse || input.value.trim().length < 2) return;
+    const matches = fuse.search(input.value).slice(0, 20);
+    matches.forEach(({ item }) => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${item.permalink}">${item.title}</a><br><small>${item.summary}</small>`;
+      li.style.marginBottom = "16px";
+      results.appendChild(li);
+    });
+  });
+</script>
+{{ end }}

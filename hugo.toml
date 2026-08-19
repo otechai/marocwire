@@ -10,10 +10,13 @@ pagination.pagerSize = 10
 [minify]
   disableXML = true
 
+# [outputs]
+#   # PaperMod's "JSON" output was for its Fuse.js search index (layouts/index.json.json).
+#   # Mainroad has no equivalent template — leaving JSON here breaks the build.
+#   home = ["HTML", "RSS"]
+
 [outputs]
-  # PaperMod's "JSON" output was for its Fuse.js search index (layouts/index.json.json).
-  # Mainroad has no equivalent template — leaving JSON here breaks the build.
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]
 
 [Author]
   name = "Otmane Echaibi"
@@ -83,7 +86,10 @@ pagination.pagerSize = 10
     name = "About"
     url = "/about/"
     weight = 30
-  # "search" menu item removed — no /search/ page yet, see note above
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 40
 
 [taxonomies]
   tag = "tags"
