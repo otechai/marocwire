@@ -2,7 +2,7 @@
 title = "Morocco's Own Watchdog Says Street Violence Is Up 29% — And Nobody's Punished for It"
 date = 2026-07-27T09:00:00+01:00
 draft = false
-slug = "bo-7529-morocco-civic-behavior-report-rail-ram-aeronautics"
+slug = "7529-morocco-civic-behavior-report-rail-ram-aeronautics"
 tags = ["Morocco", "Bulletin Officiel", "public safety", "road safety", "high-speed rail", "Royal Air Maroc", "aviation", "dams", "water", "wheat", "meat prices", "customs", "CESE"]
 categories = ["Arabic Edition"]
 description = "Morocco's official gazette No. 7529: a state watchdog's report finds violence, harassment and littering climbing in public spaces, the Kenitra–Marrakech high-speed rail line advances, RAM launches an aircraft-maintenance training academy, and food import duties get extended relief."
