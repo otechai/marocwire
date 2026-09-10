@@ -1,6 +1,6 @@
-baseURL = "https://otechai.github.io/marocwire/"
+baseURL = "https://otechai.github.io/aljareeda/"
 locale = "en-us"
-title = "MarocWire"
+title = "Aljareeda"
 theme = "mainroad"
 enableRobotsTXT = true
 enableEmoji = true
@@ -20,8 +20,8 @@ pagination.pagerSize = 10
 
 [Author]
   name = "Otmane Echaibi"
-  bio = "MarocWire reads Morocco's Bulletin Officiel so you don't have to — translated, filtered, and written in plain English for Moroccan expats, everyday Moroccans, and the international public."
-  avatar = "img/marocwire-logo.png"
+  bio = "Aljareeda reads Morocco's Bulletin Officiel so you don't have to — translated, filtered, and written in plain English for Moroccan expats, everyday Moroccans, and the international public."
+  avatar = "img/aljareeda-logo.png"
 
 [params]
   description = "Morocco's official gazette, translated into news for Moroccan expats, everyday Moroccans, and the international public — investment, infrastructure, rights, accountability, and MRE policy, sourced straight from government paperwork."
@@ -35,8 +35,8 @@ pagination.pagerSize = 10
   googleAnalytics = ""       # optional: paste tracking ID if/when you add GA
 
   [params.logo]
-    image = "img/marocwire-logo.png"
-    title = "MarocWire"
+    image = "img/aljareeda-logo.png"
+    title = "Aljareeda"
     subtitle = "News from Morocco's Official Gazette — for the diaspora, everyday Moroccans, and the world"
 
   [params.thumbnail]
